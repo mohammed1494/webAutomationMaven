@@ -13,7 +13,6 @@ import java.util.concurrent.TimeUnit;
 public class AmazonHomeWithTestControl {
     WebDriver driver = null;
     @BeforeMethod
-
     public void setUp(){
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Mohammed Ali\\IdeaProjects\\SeleniumProject1\\Driver\\chromedriver.exe");
         driver = new ChromeDriver();
@@ -23,12 +22,10 @@ public class AmazonHomeWithTestControl {
         driver.manage().window().fullscreen();
     }
 
-
     @AfterMethod
     public void cleanUp(){
         //driver.close();
     }
-
 
     @Test
     public void test1(){
